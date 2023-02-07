@@ -1,8 +1,18 @@
+
+/// Imperative way to do.(Vanilla Js)
+
+// const h1 = document.createElement("h1")
+// h1.textContent = "This is an imperative way to program"
+// h1.className = "header"
+// document.getElementById("root").append(h1)
+
+
+/// Declarative way
 const MainContent = ()=>{
     return (<h1>I'm learning react!</h1>)
 }
 
-
+const mainContent = (<h1>I'm pratik!</h1>)
 // this is jsut a bootstrap code.
 function Navbar() {
     return (
@@ -44,16 +54,61 @@ function Navbar() {
     )
 }
 
+const nav = (
+    <nav>
+        <h1>
+            Lootlo
+        </h1>
+        <ul>
+            <li>Pricing</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+)
 
-ReactDOM.render(
-//   <ul>
-//     <li>pratik</li>
-//     <li>tanya</li>
-//   </ul>,
-<div>
-    <Navbar />
-    <MainContent />
-</div>
-,
-  document.getElementById("root")
-);
+const page = (
+    <div>
+        <h1>My Awesome website in React</h1>
+        <h3>Reason I love React</h3>
+        <ol>
+            <li>It's composable</li>
+            <li>It's declarative</li>
+            <li>It's hierable skill</li>
+            <li>It's acitivity maintained by skilled people</li>
+        </ol>
+    </div>
+)
+
+/// React 18 changed how the render works.
+const docRoot = document.getElementById('root')
+ReactDOM.createRoot(docRoot).render(page)
+
+
+/// Old render way.
+
+// ReactDOM.render(page, document.getElementById('root'))
+
+// ReactDOM.render(
+//     nav,
+//     document.getElementById("root")
+// )
+
+// ReactDOM.render(
+// <div>
+//     <Navbar />
+//     <MainContent />
+// </div>
+// ,
+//   document.getElementById("root")
+// );
+
+// ReactDOM.render(
+//     MainContent(),
+//     document.getElementById("root")
+// )
+
+// ReactDOM.render(
+//     mainContent,
+//     document.getElementById("root")
+// )
