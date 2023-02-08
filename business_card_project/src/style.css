@@ -79,6 +79,23 @@ body {
 margin-top: 0;
 }
 
+.more-info{
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.more-info > h4 {
+  margin-bottom: 5px;
+  margin-top: 25px;
+}
+
+.more-info > p {
+  font-size: 10.24px;
+  font-weight: 400;
+  color: #4A4E74;
+  margin-top: 0;
+}
+
 .card {
   width: 317px;
   height: 780px;
@@ -87,4 +104,5 @@ margin-top: 0;
   margin: auto;
   margin-top: 44px;
   margin-bottom: 44px;
+
 }
